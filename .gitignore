@@ -1,0 +1,8 @@
+.DS_Store
+.typst-preview.*.typ
+template.pdf
+
+tmp
+thesis.typ
+article.typ
+article.pdf
