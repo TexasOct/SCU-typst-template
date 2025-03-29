@@ -1,6 +1,6 @@
 // 参考文献
-#let _set_references(csl_style: "scu-cs-ug.csl", body) = {
-    set bibliography(title: "参考文献", style: csl_style)
+#let _set_references(csl_style: none, body) = {
+    set bibliography(title: "参考文献", style: "gb-7714-2015-numeric")
 
     show bibliography: it =>{
         set heading(level: 1, numbering: none)

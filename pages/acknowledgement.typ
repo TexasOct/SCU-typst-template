@@ -12,10 +12,11 @@
     set text(weight: "bold", font: heiti, size: 18pt)
 
     "致　　谢"
-  } + empty_par()
+  }
 
   
   [= 致谢 <_thx>]
+  
 
   body
 }

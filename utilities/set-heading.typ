@@ -24,11 +24,13 @@
         it
     }
     show heading.where(level: 2): it => {
+        set align(center)
         set text(weight: "bold", font: songti, size: 14pt)
         set block(above: 1.5em, below: 1.5em)
         it
     }
     show heading.where(level: 3): it => {
+        set align(center)
         set text(weight: "bold", font: kaiti, size: 12pt)
         set block(above: 1.5em, below: 1.5em)
         it
