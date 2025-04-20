@@ -128,6 +128,7 @@ typst 是最新最热的标记文本语言，定位与 LaTeX 类似，具有极�
     | Andorra | AD | AND |
     | Angola | AP | AGO |
   ],
+  kind: table,
   caption: "三线表示例"
 )
 
@@ -144,8 +145,11 @@ typst 是最新最热的标记文本语言，定位与 LaTeX 类似，具有极�
     | Andorra | AD | AND | 2 |
     | Angola | AP | AGO | 1 |
   ],
+  kind: table,
   caption: "三线表示例2"
-)
+) <tbl2>
+
+引用 2-2: @tbl:tbl2
 
 == 公式
 
