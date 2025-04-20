@@ -7,11 +7,7 @@
     #v(20pt)
 
     // 匿名化处理需要去掉个人、机构信息
-    #let logo_path = if not anonymous {
-      cover_logo_path
-    } else {
-      "../assets/black.png"
-    }
+    #let logo_path = cover_logo_path
 
     // 学校名称 png
     #image(logo_path)
@@ -64,7 +60,7 @@
       rows: (25pt),
       gutter: 3pt,
       info_key("题　　目"),
-      info_value(if not anonymous { title } else { "██████████" }),
+      info_value(title),
       info_key("学　　院"),
       info_value(if not anonymous { school } else { "██████████" }),
       info_key("专　　业"),
@@ -76,7 +72,7 @@
         columns: (8fr, 2fr, 5fr),
         info_value(if not anonymous { id } else { "██████████" }),
         info_key("年级"),
-        info_value(if not anonymous { grade } else { "██████████" }),
+        info_value(if not anonymous { grade } else { "███████" }),
       ),
       info_key("指导教师"),
       info_value(if not anonymous { mentor } else { "██████████" }),

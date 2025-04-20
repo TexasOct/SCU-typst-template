@@ -12,7 +12,7 @@
 #import "../pages/paper-cover.typ": paper_cover
 #import "../pages/paper-pages.typ": *
 
-#import "../utilities/three-line-table.typ": three_line_table
+#import "@preview/tablem:0.2.0": three-line-table
 #import "../utilities/indent-funs.typ": *
 #import "../utilities/bib-cite.typ": *
 #import "../utilities/set-heading.typ": _set_heading
@@ -73,12 +73,12 @@
   // 摘要
 
   if (abstract_zh != []) { 
-    zh_abstract_page(title, author, mentor, major, abstract_zh, keywords: keywords_zh)
+    zh_abstract_page(title, author, mentor, major, abstract_zh, keywords: keywords_zh, anonymous: anonymous )
     pagebreak()
   }
 
   if (abstract_en != []) { 
-    en_abstract_page(title_en, author_en, mentor_en, major_en, abstract_en, keywords: keywords_en)
+    en_abstract_page(title_en, author_en, mentor_en, major_en, abstract_en, keywords: keywords_en, anonymous: anonymous)
     pagebreak()
   }
 
