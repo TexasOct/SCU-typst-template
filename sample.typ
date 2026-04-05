@@ -7,6 +7,10 @@
 #show: project.with(
   anonymous: false,
   title: "基于Typst的川大计院毕业论文模版",
+  title_array: (
+    "(可选)用于标题过长的情况",
+    "基于Typst的川大计院毕业论文模版"
+  ),
   author: "你的名字",
   school: "计算机学院",
   id: "你的学号",

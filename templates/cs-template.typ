@@ -22,6 +22,7 @@
 #let project(
   anonymous: false, // 是否匿名化处理
   title: "",
+  title_array: (),
   school: "",
   major: "",
   author: "",
