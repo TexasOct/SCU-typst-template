@@ -21,7 +21,9 @@
 
 #let project(
   anonymous: false, // 是否匿名化处理
+  center_headings: false,
   title: "",
+  title_array: (),
   school: "",
   major: "",
   author: "",
@@ -43,7 +45,7 @@
   /* 全局整体设置 */
 
   // 设置标题, 需要在图表前设置
-  show: _set_heading
+  show: _set_heading.with(center_headings: center_headings)
   // 图表公式的排版
   show: _set_figure
   // 图表公式的序号

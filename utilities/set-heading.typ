@@ -1,6 +1,7 @@
 #import "../fonts/font-def.typ": *
 
-#let _set_heading(body) ={
+#let _set_heading(center_headings: false, body) ={
+    let align_mode = if center_headings { center } else { left }
     set heading(numbering: "1.1.1.1")
     set heading(supplement: [节])
 
@@ -18,19 +19,19 @@
     }
     }
     show heading.where(level: 1): it => {
-        set align(center)
+        set align(align_mode)
         set text(weight: "bold", font: heiti, size: 15pt)
         set block(spacing: 1.5em)
         it
     }
     show heading.where(level: 2): it => {
-        set align(center)
+        set align(align_mode)
         set text(weight: "bold", font: songti, size: 14pt)
         set block(above: 1.5em, below: 1.5em)
         it
     }
     show heading.where(level: 3): it => {
-        set align(center)
+        set align(align_mode)
         set text(weight: "bold", font: kaiti, size: 12pt)
         set block(above: 1.5em, below: 1.5em)
         it
